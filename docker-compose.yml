@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  audit_service:
+    image: ${DOCKER_REGISTRY-}auditservice
+    build:
+      context: .
+      dockerfile: Audit_Service/Dockerfile
